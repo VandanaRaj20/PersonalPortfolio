@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Comfortaa:wght@300&family=Happy+Monkey&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Happy+Monkey&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a class="nav-link" href="#About">About Me</a></li>
+              <li><a class="nav-link" href="#interests">My Interests</a></li> 
+              <li><a class="nav-link" href="#gallery">Gallery</a></li> 
+            </ul>
+            </div>
+            </div>
+      </nav>
+
+      <i class="fas fa-arrow-circle-up" data-toggle="tooltip" title="Top Page" id="topg"></i>
+      <script type="text/javascript">
+        document.getElementById("topg").onclick = function() {
+          location.href = "#topic";
+        } ;
+      
+      </script>
+
+      <div class="container"  id="topic">
+      <header>
+        <h1 class="display-3">Hello, Everyone!</h1>
+        <h1>This is my Personal Portfolio</h1>
+        <h1>Have a good day :)</h1>
+      </header>
+
+      <div class="container" id="About">
+        <h2>Who Am I?</h2>  
+        <p>A computer science undergraduate student with an intense passion towards web designing, graphic designing and photography.
+           I learnt basics of Computer architecture, networking, Python and few applications of machine learning in my college and am still learning.
+           There's one more year left for me to graduate from college and I can't wait to get away from this stressful college life and travel to exotic destinations.  
+        </p>
+        
+        <img src="images/diagoona-bg-3.jpg" id="imgs" class="rounded-circle mx-auto d-block" alt="heaven" width="300" height="200">
+      
+      </div>
+
+      <div class="container" id="interests">
+        <h2>What do I do in my free time?</h2>
+        <p>I sketch and paint during my free time. 
+            Photography is one of my passions, every evening during my summer break, 
+            I climb up to the terrace of my apartment just to capture the setting Sun. 
+            I enjoy cycling around the neighbourhood and hang out with my friends at the nearest coffee shop.
+         </p>
+         <p>
+            Music plays an important role in my life.<br>
+            Wanna know who my favourites are?  
+            <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#artist">Click Me!!</button> 
+              <table id="artist" class="table table-dark table-hover table-responsive-sm table-bordered collapse">
+                <thead>
+                  <tr>
+                    <th>Bands</th>
+                    <th>Singers</th>
+                    <th>Rappers</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>BTS</td>
+                    <td>Katy Perry</td>
+                    <td>Nicki Minaj</td>
+                  </tr>
+                  <tr>
+                    <td>Queen</td>
+                    <td>Sam Smith</td>
+                    <td>Eminem</td>
+                  </tr>
+                  <tr>
+                    <td>EXO</td>
+                    <td>Ross Copperman</td>
+                    <td>Wiz Khalifa</td>
+                  </tr>
+                </tbody>
+              </table>  
+         </p>
+      </div>
+
+
+      <style>
+        /* Make the image fully responsive */
+        .carousel-inner{
+          text-align: center;
+        }
+        .carousel-inner img {
+          width: 90%;
+          height: 90%;
+        }
+        </style>
+
+      
+      <div class="container">
+      <div class="carousel slide" data-ride="carousel" id="gallery" >
+        <h2>My Photography Collection</h2>
+          <p>Some of my favourite shots are displayed in the carousel below.</p>
+           <ul class="carousel-indicators">
+            <li data-target="#gallery" data-slide-to="0" class="active"></li>
+            <li data-target="#gallery" data-slide-to="1"></li>
+            <li data-target="#gallery" data-slide-to="2"></li>
+            <li data-target="#gallery" data-slide-to="3"></li>
+          </ul>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/drops.jpeg" alt="pic1" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+              <img src="images/corr.jpeg" alt="pic2" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+              <img src="images/pinky.jpeg" alt="pic3" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+              <img src="images/sunset.jpeg" alt="pic4" width="1100" height="500">
+            </div>
+          </div>
+
+          <a class="carousel-control-prev" href="#gallery" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#gallery" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+      </div>
+    </div>
+
+  </body>
+    <footer>
+      &copy;2021 by Vandana Rajesh  
+    </footer>
