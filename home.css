@@ -14,7 +14,7 @@ header{
     from {
         text-shadow: 0 0 5px #fff, 0 0 7px #fff, 0 0 17px #e60073, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073;
       }
-      
+
       to {
         text-shadow: 0 0 10px #fff, 0 0 20px #ff4da6, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 80px #ff4da6;
       }
@@ -34,7 +34,7 @@ header{
   }
 
 h2{
-    
+
     text-align: center;
     color: rgb(0, 0, 0);
     font-family: 'Krona One', sans-serif;
@@ -51,7 +51,7 @@ i{
     font-size: 3em;
     bottom: 10%;
     right: 2%;
-    
+
 }
 
 i:hover{
@@ -64,11 +64,11 @@ footer{
     background-color: lightgray;
 }
 
-#topic{ 
+#topic{
     background-color: #3f0015;
     padding: 17%;
 }
-#About{ 
+#About{
     background-color: rgb(129, 247, 255);
     padding: 17%;
     color: midnightblue;
@@ -104,7 +104,7 @@ a{
     display: inline-block;
     text-decoration: none;
     transition: 0.5s;
-    
+
 }
 
 a:hover{
@@ -112,7 +112,7 @@ a:hover{
     letter-spacing: 2px;
 }
 
-a span{
+/*a span{
     position: absolute;
     display: block;
 }
@@ -185,7 +185,7 @@ a span:nth-child(4){
     50%,100%{
         bottom: 100%;
     }
-}
+}*/
 
 #glowing{
     padding: 18%;
@@ -212,4 +212,3 @@ a span:nth-child(4){
     box-shadow: 0 0 150px 50px white;
 
 }
-
