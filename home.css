@@ -1,28 +1,32 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
 header{
-    padding-top: 15%;
     text-align: center;
     font-family: 'Comfortaa', cursive;
     font-size: 100%;
-    text-shadow: 2px 1pc 4px lightgrey;
+    width: 100%;
 }
 
 @keyframes changing {
-    0% {color: rgb(155, 139, 0);}
-    25% {color: #007763;}
-    50% {color: #500085;}
-    75% {color: #2a9400;}
-    100% {color: #ad0000;}
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 7px #fff, 0 0 17px #e60073, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073;
+      }
+      
+      to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff4da6, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 80px #ff4da6;
+      }
 }
 
 .display-3{
-    animation: changing 10s infinite;
-    animation-delay: 2s;
-    
+    animation: changing 1s ease-in-out infinite alternate;
+    color: white;
 }
 
-
-.container{
-    margin-top: 25%;
+#eff{
+    color: rgb(255, 196, 216) !important;
 }
 
 #imgs {
@@ -30,9 +34,9 @@ header{
   }
 
 h2{
-    padding-top: 13%;
+    
     text-align: center;
-    color: lightseagreen;
+    color: rgb(0, 0, 0);
     font-family: 'Krona One', sans-serif;
     font-size: 100%;
 }
@@ -47,7 +51,6 @@ i{
     font-size: 3em;
     bottom: 10%;
     right: 2%;
-    text-shadow: 0 5px 4px lightslategray;
     
 }
 
@@ -56,8 +59,157 @@ i:hover{
 }
 
 footer{
-    margin-top: 7%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     background-color: lightgray;
 }
+
+#topic{ 
+    background-color: #3f0015;
+    padding: 17%;
+}
+#About{ 
+    background-color: rgb(129, 247, 255);
+    padding: 17%;
+    color: midnightblue;
+}
+
+#interests{
+    background-color: #56ff5e;
+    padding: 17%;
+    color: rgb(78, 78, 0);
+}
+
+#photo{
+    background-color: rgb(255, 216, 132);
+    padding: 17%;
+    color: sienna;
+}
+
+th{
+    background-color: rgb(180, 255, 31);
+}
+
+tr{
+    background-color: rgb(226, 255, 169);
+}
+
+tr:hover{
+    background-color: lightgreen !important;
+}
+
+a{
+    text-align: center;
+    margin-left: 2%;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.5s;
+    
+}
+
+a:hover{
+    color: lightpink !important;
+    letter-spacing: 2px;
+}
+
+a span{
+    position: absolute;
+    display: block;
+}
+
+a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#adfbff);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#affbff);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+#glowing{
+    padding: 18%;
+    text-align: center;
+    background-color: black;
+    color: cornsilk;
+}
+
+
+#lamp{
+    margin: auto;
+    padding: 6%;
+    width: 150px;
+    height: 150px;
+    border-style: none;
+    border-radius: 50% !important;
+    background-color: slategrey;
+    transition-duration: 1s;
+}
+
+#lamp:hover{
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 0 150px 50px white;
+
+}
+

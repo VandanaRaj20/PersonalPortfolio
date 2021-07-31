@@ -19,7 +19,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body  data-spy="scroll" data-target=".navbar" data-offset="50">
 
     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" role="navigation">
         <div class="container-fluid">
@@ -30,9 +30,39 @@
           </div>
             <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-              <li><a class="nav-link" href="#About">About Me</a></li>
-              <li><a class="nav-link" href="#interests">My Interests</a></li> 
-              <li><a class="nav-link" href="#gallery">Gallery</a></li> 
+              <li><a class="nav-link" href="#About">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                About Me</a>
+              </li>
+
+              <li><a class="nav-link" href="#interests">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                
+                My Interests</a>
+              </li> 
+
+              <li><a class="nav-link" href="#photo">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                
+                Gallery</a>
+              </li> 
+              <li><a class="nav-link" href="#glowing">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                
+                Lumos</a>
+              </li> 
             </ul>
             </div>
             </div>
@@ -46,14 +76,16 @@
       
       </script>
 
-      <div class="container"  id="topic">
+      <section class="container-fluid"  id="topic">
       <header>
         <h1 class="display-3">Hello, Everyone!</h1>
-        <h1>This is my Personal Portfolio</h1>
-        <h1>Have a good day :)</h1>
+        <h1 id="eff">This is my Personal Portfolio</h1>
+        <h1 id="eff">Have a good day :)</h1>
       </header>
+      </section>
 
-      <div class="container" id="About">
+
+      <section class="container-fluid" id="About">
         <h2>Who Am I?</h2>  
         <p>A computer science undergraduate student with an intense passion towards web designing, graphic designing and photography.
            I learnt basics of Computer architecture, networking, Python and few applications of machine learning in my college and am still learning.
@@ -62,9 +94,9 @@
         
         <img src="images/diagoona-bg-3.jpg" id="imgs" class="rounded-circle mx-auto d-block" alt="heaven" width="300" height="200">
       
-      </div>
+      </section>
 
-      <div class="container" id="interests">
+      <section class="container-fluid" id="interests">
         <h2>What do I do in my free time?</h2>
         <p>I sketch and paint during my free time. 
             Photography is one of my passions, every evening during my summer break, 
@@ -75,7 +107,7 @@
             Music plays an important role in my life.<br>
             Wanna know who my favourites are?  
             <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#artist">Click Me!!</button> 
-              <table id="artist" class="table table-dark table-hover table-responsive-sm table-bordered collapse">
+              <table id="artist" class="table table-hover table-responsive-sm table-bordered collapse">
                 <thead>
                   <tr>
                     <th>Bands</th>
@@ -102,7 +134,7 @@
                 </tbody>
               </table>  
          </p>
-      </div>
+      </section>
 
 
       <style>
@@ -117,7 +149,7 @@
         </style>
 
       
-      <div class="container">
+      <section class="container-fluid" id="photo">
       <div class="carousel slide" data-ride="carousel" id="gallery" >
         <h2>My Photography Collection</h2>
           <p>Some of my favourite shots are displayed in the carousel below.</p>
@@ -150,8 +182,11 @@
             <span class="carousel-control-next-icon"></span>
           </a>
       </div>
-    </div>
+      </section>
 
+      <section class="container-fluid" id="glowing">
+        <div id="lamp">Lumos Maxima!</div>
+      </section>
   </body>
     <footer>
       &copy;2021 by Vandana Rajesh  
